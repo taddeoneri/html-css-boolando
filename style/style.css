@@ -11,7 +11,7 @@
     --red: #ff0000;
 }
 .container{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 .d-flex{
@@ -32,13 +32,38 @@ nav a{
 li{
     list-style: none;
 }
+.card{
+    max-width: calc((100% / 3) - 15px);
+    padding-top: 65px;
+}
 .box{
-    width: 400px;
-    height: 500px;
-    border: 1px solid black;
     position: relative;
 }
 .flag{
     position: absolute;
-    top: 430px;
+    top: 500px;
+    z-index: 1;
+}
+main img{
+    width: 100%;
+}
+.red{
+    background-color: var(--red);
+    color: var(--primary-color);
+    padding: 5px 10px;
+}
+.green{
+    background-color: var(--green);
+    color: var(--primary-color);
+    padding: 5px 10px;
+}
+.heart{
+    position: absolute;
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    top: 10px;
+    right: 0;
+}
+.heart span{
+    font-size: 26px;
 }
