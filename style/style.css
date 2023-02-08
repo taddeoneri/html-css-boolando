@@ -71,6 +71,7 @@ main{
     padding: 5px 10px;
     top: 10px;
     right: 0;
+    cursor: pointer;
 }
 .heart span{
     font-size: 26px;
@@ -102,4 +103,18 @@ footer{
 }
 .footer-right i{
     font-size: 20px;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    cursor: pointer;
+}
+.img:hover .hover{
+    display: block;
+}
+.heart:hover .heart-hover{
+    color: var(--red);
+    display: block;
 }
