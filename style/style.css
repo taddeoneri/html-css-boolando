@@ -22,8 +22,13 @@
 }
 header{
     background-color: var(--bg-header);
+    width: 100%;
+    padding: 15px 0px;
 }
-nav a{
+nav img{
+    height: 30px;
+}
+a{
     text-decoration: none;
 }
 .text-white{
@@ -47,6 +52,9 @@ li{
 main img{
     width: 100%;
 }
+main{
+    padding-bottom: 65px;
+}
 .red{
     background-color: var(--red);
     color: var(--primary-color);
@@ -66,4 +74,32 @@ main img{
 }
 .heart span{
     font-size: 26px;
+}
+.brand-card{
+    text-transform: capitalize;
+}
+.title-card{
+    text-transform: uppercase;
+}
+.price-red{
+    color: var(--red );
+    font-size: 14px;
+}
+.price-black{
+    padding-left: 5px;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.p-20{
+    padding-right: 20px;
+}
+footer{
+    background-color: var(--bg-footer);
+    padding: 25px 0px;
+}
+.p-top-15{
+    padding-top: 10px;
+}
+.footer-right i{
+    font-size: 20px;
 }
