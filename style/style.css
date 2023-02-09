@@ -18,15 +18,24 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
+}
+.align-center{
     align-items: center;
 }
 header{
     background-color: var(--bg-header);
     width: 100%;
     padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
 }
 nav img{
-    height: 30px;
+    width: 170px;
 }
 a{
     text-decoration: none;
@@ -51,6 +60,10 @@ li{
 }
 main img{
     width: 100%;
+    display: block;
+}
+.m-top{
+    margin-top: 60px;
 }
 main{
     padding-bottom: 65px;
@@ -59,11 +72,13 @@ main{
     background-color: var(--red);
     color: var(--primary-color);
     padding: 5px 10px;
+    z-index: 100;
 }
 .green{
     background-color: var(--green);
     color: var(--primary-color);
     padding: 5px 10px;
+    z-index: 100;
 }
 .heart{
     position: absolute;
@@ -75,6 +90,7 @@ main{
 }
 .heart span{
     font-size: 26px;
+    z-index: 100;
 }
 .brand-card{
     text-transform: capitalize;
@@ -111,9 +127,9 @@ footer{
     display: none;
     cursor: pointer;
 }
-.img:hover .hover{
+.box:hover .hover{
     display: block;
-}
+}   
 .heart:hover .heart-hover{
     color: var(--red);
     display: block;
